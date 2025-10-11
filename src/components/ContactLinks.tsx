@@ -39,7 +39,7 @@ const ContactLinks = () => {
 
   return (
     <div className="container mx-auto mt-8 md:mt-12">
-      <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 lg:gap-10">
+      <div className="flex flex-col md:flex-row md:items-center gap-4 md:gap-8 lg:gap-10 items-center md:items-start">
         {links.map((link, index) => {
           const Icon = link.icon;
           const content = (
