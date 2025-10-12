@@ -9,7 +9,7 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Portfolio Design System - Dark Theme */
-    --background: 0 0% 4.3%; /* #0b0b0b */
+    --background: 0 0% 9.8%; /* #18181b */
     --foreground: 0 0% 90.2%; /* #e6e6e6 */
 
     --card: 0 0% 4.3%;

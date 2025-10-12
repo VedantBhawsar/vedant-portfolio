@@ -16,7 +16,7 @@ const Hero = () => {
 
         {/* Text content - center on mobile */}
         <div className="text-center md:text-left w-full">
-          <h1 className="text-2xl md:text-[32px] lg:text-[40px] font-semibold text-primary leading-tight">
+          <h1 className="text-2xl md:text-[32px] lg:text-[40px] font-medium text-primary leading-tight">
             Niraj Rajput
           </h1>
           <p className="text-base md:text-[18px] lg:text-[20px] font-medium text-muted-foreground mt-1">
@@ -41,7 +41,7 @@ const Hero = () => {
             className="animated-underline inline-flex items-center gap-2 text-[15px] text-primary font-medium focus-ring rounded-sm px-2 py-1"
             aria-label="Download resume PDF"
           >
-            <Download size={18} className="shrink-0" />
+            <Download size={16} className="shrink-0" />
             <span>Download Resume</span>
           </a>
         </div>
