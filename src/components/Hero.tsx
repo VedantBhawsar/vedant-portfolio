@@ -33,13 +33,12 @@ const Hero = () => {
         </div>
 
         {/* Download Resume CTA - centered on mobile, bottom-aligned on desktop */}
-        <div className="mt-6 md:mt-0 md:flex md:items-end w-full md:w-auto justify-center md:justify-end">
+        <div className="mt-6 md:mt-0 flex md:items-end w-full md:w-auto justify-center md:justify-end">
           <a
             href="https://drive.google.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="animated-underline inline-flex items-center gap-2 text-[15px] text-primary font-medium focus-ring rounded-sm px-2 py-1 relative"
-            style={{ textDecoration: 'underline', textDecorationColor: 'hsl(var(--muted-foreground))', textDecorationThickness: '1px', textUnderlineOffset: '4px' }}
+            className="animated-underline inline-flex items-center gap-2 text-[15px] text-primary font-medium focus-ring rounded-sm px-2 py-1"
             aria-label="Download resume PDF"
           >
             <Download size={18} className="shrink-0" />
