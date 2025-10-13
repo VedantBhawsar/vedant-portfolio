@@ -41,9 +41,7 @@ const Hero = () => {
             className="animated-underline inline-flex items-center gap-2 text-[15px] text-primary font-medium focus-ring rounded-sm px-2 py-1"
             aria-label="Download resume PDF"
           >
-            <span className="flex items-center">
-              <Download size={16} className="shrink-0" />
-            </span>
+            <Download size={16} className="shrink-0" />
             <span>Download Resume</span>
           </a>
         </div>

@@ -67,7 +67,7 @@ All colors MUST be HSL.
 @layer utilities {
   /* Animated underline for links */
   .animated-underline {
-    @apply relative inline-block;
+    @apply relative;
   }
   
   .animated-underline::after {
