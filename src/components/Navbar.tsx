@@ -16,7 +16,7 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background">
-      <div className="container mx-auto">
+      <div className="container mx-auto max-w-[900px]">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Mobile hamburger - left aligned */}
           <button
