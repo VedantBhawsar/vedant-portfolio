@@ -2,7 +2,7 @@ import { Download, MapPin } from "lucide-react";
 
 const Hero = () => {
   return (
-    <section className="container mx-auto pt-24 md:pt-32 pb-12">
+    <section className="container mx-auto max-w-[900px] pt-24 md:pt-32 pb-12">
       {/* Desktop: grid layout, Mobile: stacked */}
       <div className="flex flex-col md:grid md:grid-cols-[auto_1fr_auto] md:gap-8 items-start">
         {/* Avatar - centered on mobile */}
