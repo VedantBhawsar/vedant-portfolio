@@ -4,13 +4,13 @@ const Hero = () => {
   return (
     <section className="container mx-auto max-w-[900px] pt-24 md:pt-32 pb-12">
       {/* Desktop: grid layout, Mobile: stacked */}
-      <div className="flex flex-col md:grid md:grid-cols-[auto_1fr_auto] md:gap-8 items-start">
+      <div className="flex flex-col md:grid md:grid-cols-[auto_1fr_auto] md:gap-6 lg:gap-8 md:items-start">
         {/* Avatar - centered on mobile */}
-        <div className="w-full md:w-auto flex justify-center md:justify-start mb-6 md:mb-0">
+        <div className="w-full md:w-auto flex justify-center md:justify-start mb-6 md:mb-0 md:self-start">
           <img
             src="https://i.pinimg.com/1200x/73/7e/02/737e021ae6c86a719f32281e1bcb550a.jpg"
             alt="Niraj Rajput"
-            className="w-24 h-24 md:w-[120px] md:h-[120px] lg:w-[160px] lg:h-[160px] object-cover rounded-[10px]"
+            className="w-24 h-24 md:w-[130px] md:h-[130px] lg:w-[140px] lg:h-[140px] object-cover rounded-[10px]"
           />
         </div>
 
@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
 
         {/* Download Resume CTA - centered on mobile, bottom-aligned on desktop */}
-        <div className="mt-6 md:mt-0 flex md:items-end w-full md:w-auto justify-center md:justify-end">
+        <div className="mt-6 md:mt-0 flex items-end w-full md:w-auto justify-center md:justify-end md:self-end">
           <a
             href="https://drive.google.com/"
             target="_blank"

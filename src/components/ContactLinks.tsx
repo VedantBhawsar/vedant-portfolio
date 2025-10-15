@@ -81,6 +81,9 @@ const ContactLinks = () => {
 
   return (
     <div className="container mx-auto max-w-[900px] mt-8 md:mt-12">
+      {/* Divider line */}
+      <div className="border-t border-muted mb-8 md:mb-12" />
+      
       {/* Mobile/Tablet: Stack all links centered */}
       <div className="flex flex-col md:hidden gap-4 items-center">
         {renderLink(emailLink, 0)}

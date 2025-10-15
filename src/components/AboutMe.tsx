@@ -1,9 +1,6 @@
 const AboutMe = () => {
   return (
     <section className="container mx-auto max-w-[900px] mt-12 md:mt-16">
-      {/* Divider line */}
-      <div className="border-t border-muted mb-12 md:mb-16" />
-
       <div className="max-w-[800px]">
         <h2 className="text-2xl font-semibold text-primary mb-6">About me</h2>
         <p className="text-base leading-relaxed text-muted-foreground">
