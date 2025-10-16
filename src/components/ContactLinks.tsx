@@ -80,9 +80,9 @@ const ContactLinks = () => {
   };
 
   return (
-    <div className="container mx-auto max-w-[900px] mt-4 md:mt-6">
+    <div className="container mx-auto max-w-[900px] mt-2 md:mt-4">
       {/* Divider line */}
-      <div className="border-t border-muted mb-4 md:mb-6" />
+      <div className="border-t border-muted mb-2 md:mb-4" />
       
       {/* Mobile/Tablet: Stack all links centered */}
       <div className="flex flex-col md:hidden gap-4 items-center">

@@ -16,7 +16,7 @@ const Hero = () => {
 
         {/* Text content - center on mobile */}
         <div className="text-center md:text-left w-full">
-          <h1 className="text-lg md:text-[28px] lg:text-[36px] font-medium text-primary leading-tight">
+          <h1 className="text-base md:text-[28px] lg:text-[36px] font-medium text-primary leading-tight">
             Niraj Rajput
           </h1>
           <p className="text-base md:text-[18px] lg:text-[20px] font-medium text-muted-foreground mt-1">
