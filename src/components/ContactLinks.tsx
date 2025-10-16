@@ -80,7 +80,7 @@ const ContactLinks = () => {
   };
 
   return (
-    <div className="container mx-auto max-w-[900px] mt-8 md:mt-12">
+    <div className="container mx-auto max-w-[900px] mt-4 md:mt-6">
       {/* Divider line */}
       <div className="border-t border-muted mb-4 md:mb-6" />
       
