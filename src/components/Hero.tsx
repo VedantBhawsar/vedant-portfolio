@@ -19,7 +19,7 @@ const Hero = () => {
           <h1 className="text-lg md:text-[24px] lg:text-[30px] font-medium text-primary leading-tight">
             Niraj Rajput
           </h1>
-          <p className="text-base md:text-[18px] lg:text-[20px] font-medium text-muted-foreground mt-1">
+          <p className="text-sm md:text-[18px] lg:text-[20px] font-medium text-muted-foreground mt-1">
             Full Stack Web Developer
           </p>
           <p className="text-sm md:text-[15px] lg:text-base text-muted-foreground mt-2 flex items-center gap-2 justify-center md:justify-start">
