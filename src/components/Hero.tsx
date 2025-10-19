@@ -15,9 +15,9 @@ const Hero = () => {
         </div>
 
         {/* Text content - center on mobile */}
-        <div className="text-center md:text-left w-full flex flex-col justify-between">
+        <div className="text-center md:text-left w-full md:flex md:flex-col md:justify-between md:h-full">
           {/* Top section: Name, Role, Location */}
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-2">
             <h1 className="text-lg md:text-[24px] lg:text-[30px] font-medium text-primary leading-tight">
               Niraj Rajput
             </h1>
