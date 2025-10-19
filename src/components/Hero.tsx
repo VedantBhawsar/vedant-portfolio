@@ -15,18 +15,23 @@ const Hero = () => {
         </div>
 
         {/* Text content - center on mobile */}
-        <div className="text-center md:text-left w-full">
-          <h1 className="text-lg md:text-[24px] lg:text-[30px] font-medium text-primary leading-tight">
-            Niraj Rajput
-          </h1>
-          <p className="text-sm md:text-[18px] lg:text-[20px] font-medium text-muted-foreground mt-1">
-            Full Stack Web Developer
-          </p>
-          <p className="text-sm md:text-[15px] lg:text-base text-muted-foreground mt-2 flex items-center gap-2 justify-center md:justify-start">
-            <MapPin size={16} className="shrink-0" />
-            <span>Jalgaon, India</span>
-          </p>
-          <div className="flex items-center gap-2 mt-2 justify-center md:justify-start">
+        <div className="text-center md:text-left w-full flex flex-col justify-between">
+          {/* Top section: Name, Role, Location */}
+          <div className="flex flex-col gap-1">
+            <h1 className="text-lg md:text-[24px] lg:text-[30px] font-medium text-primary leading-tight">
+              Niraj Rajput
+            </h1>
+            <p className="text-sm md:text-[18px] lg:text-[20px] font-medium text-muted-foreground">
+              Full Stack Web Developer
+            </p>
+            <p className="text-sm md:text-[15px] lg:text-base text-muted-foreground flex items-center gap-2 justify-center md:justify-start">
+              <MapPin size={16} className="shrink-0" />
+              <span>Jalgaon, India</span>
+            </p>
+          </div>
+          
+          {/* Bottom section: Availability */}
+          <div className="flex items-center gap-2 mt-2 md:mt-0 justify-center md:justify-start">
             <div className="w-2 h-2 rounded-full" style={{ backgroundColor: '#00FF3C' }} />
             <span className="text-sm text-muted-foreground">Available for work</span>
           </div>
