@@ -22,7 +22,7 @@ const services: Service[] = [
 const Services = () => {
   return (
     <section className="container mx-auto max-w-[900px] mt-16 md:mt-20 pb-12 md:pb-16">
-      <h2 className="text-2xl md:text-3xl font-semibold text-primary text-center mb-10 md:mb-12">
+      <h2 className="text-2xl font-semibold text-primary mb-6">
         Here's How I Can Help You
       </h2>
       
@@ -32,7 +32,7 @@ const Services = () => {
           return (
             <div
               key={index}
-              className="bg-card border border-muted rounded-lg p-6 md:p-8 transition-all duration-300 hover:border-primary/50"
+              className="bg-card border border-muted rounded-md p-6 md:p-8 transition-all duration-300 hover:border-primary/50"
             >
               <Icon size={32} className="text-muted-foreground mb-4" />
               <h3 className="text-lg md:text-xl font-semibold text-primary mb-3">

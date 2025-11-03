@@ -10,7 +10,7 @@ const Hero = () => {
           <img
             src="https://i.pinimg.com/1200x/73/7e/02/737e021ae6c86a719f32281e1bcb550a.jpg"
             alt="Niraj Rajput"
-            className="w-24 h-24 md:w-[130px] md:h-[130px] lg:w-[140px] lg:h-[140px] object-cover rounded-[10px]"
+            className="w-24 h-24 md:w-[130px] md:h-[130px] lg:w-[140px] lg:h-[140px] object-cover rounded-md"
           />
         </div>
 
