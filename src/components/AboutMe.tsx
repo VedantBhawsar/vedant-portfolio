@@ -4,7 +4,7 @@ const AboutMe = () => {
       <div className="max-w-[800px]">
         <h2 className="text-2xl font-semibold text-primary mb-6">About me</h2>
         <p className="text-base leading-relaxed text-muted-foreground">
-          Full Stack Web Developer with hands-on experience building responsive, user-friendly interfaces and collaborating on end-to-end projects. Skilled in creating web applications, integrating APIs, and implementing scalable solutions with optimized performance. Currently expanding backend expertise and leveraging strong frontend skills to deliver efficient, modern, and seamless digital experiences.
+          Front-end Developer with practical experience in building responsive and user-focused web interfaces.
         </p>
       </div>
     </section>

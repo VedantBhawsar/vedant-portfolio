@@ -3,15 +3,15 @@ import { Copy, Linkedin, Github } from "lucide-react";
 import { toast } from "sonner";
 
 const ContactLinks = () => {
-  const [emailText, setEmailText] = useState("rajputniraj167@gmail.com");
+  const [emailText, setEmailText] = useState("nirajrajput.dev@gmail.com");
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("rajputniraj167@gmail.com");
+    navigator.clipboard.writeText("nirajrajput.dev@gmail.com");
     setEmailText("Copied!");
     toast.success("Email copied to clipboard!");
     
     setTimeout(() => {
-      setEmailText("rajputniraj167@gmail.com");
+      setEmailText("nirajrajput.dev@gmail.com");
     }, 1000);
   };
 
@@ -27,13 +27,13 @@ const ContactLinks = () => {
     {
       icon: Linkedin,
       text: "LinkedIn",
-      href: "https://www.linkedin.com/in/niraj-rajput-0a36b12a6/",
+      href: "https://www.linkedin.com/in/nirajrajput/",
       ariaLabel: "Visit LinkedIn profile",
     },
     {
       icon: Github,
       text: "GitHub",
-      href: "https://github.com/RajputNiraj",
+      href: "https://github.com/nirajrajput-dev",
       ariaLabel: "Visit GitHub profile",
     },
   ];
