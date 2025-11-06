@@ -31,14 +31,11 @@ const RecentWork = () => {
                 key={index}
                 className="group block bg-card border border-muted rounded-md overflow-hidden opacity-60 cursor-default h-full flex items-center justify-center p-6"
               >
-                <div className="text-center">
-                  <h3 className="text-lg md:text-xl font-semibold text-primary">
-                    Coming Soon
-                  </h3>
-                  <p className="text-sm md:text-base text-muted-foreground">
-                    Work in Progress
-                  </p>
-                </div>
+              <div className="text-center">
+                <h3 className="text-lg md:text-xl font-semibold text-primary">
+                  Coming Soon
+                </h3>
+              </div>
               </div>
             );
           }
