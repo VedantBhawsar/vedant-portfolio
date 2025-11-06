@@ -1,4 +1,4 @@
-import { ArrowUpRight } from "lucide-react";
+import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Project1Image from "@/assets/Project_1.png";
 
 const RecentWork = () => {
@@ -20,7 +20,7 @@ const RecentWork = () => {
   ];
 
   return (
-    <section id="work" className="container mx-auto max-w-[900px] mt-16 md:mt-20 pb-12 md:pb-16">
+    <section id="work" className="container mx-auto max-w-[900px] mt-12 md:mt-16">
       <h2 className="text-2xl font-semibold text-primary mb-6">Recent Work</h2>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
@@ -36,7 +36,7 @@ const RecentWork = () => {
                 target: "_blank",
                 rel: "noopener noreferrer",
                 "aria-label": `View ${project.heading} project`,
-                className: "group block bg-card border border-muted rounded-md overflow-hidden transition-all duration-300 hover:border-primary/50 cursor-pointer",
+                className: "group block bg-card border border-muted rounded-md overflow-hidden cursor-pointer",
               };
 
           return (
@@ -58,23 +58,30 @@ const RecentWork = () => {
                 )}
               </div>
 
-              {/* Content Section */}
-              <div className="p-6 flex items-center justify-between">
-                <div>
-                  <h3 className="text-lg md:text-xl font-semibold text-primary mb-2">
-                    {project.heading}
-                  </h3>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
-                
-                {!project.isComingSoon && (
-                  <div className="ml-4 transition-transform duration-300 group-hover:-rotate-45">
-                    <ArrowUpRight size={24} className="text-muted-foreground" />
+              {/* Content Section - only for non-coming-soon projects */}
+              {!project.isComingSoon && (
+                <div className="p-6 flex items-center justify-between">
+                  <div>
+                    <h3 className="text-lg md:text-xl font-semibold text-primary mb-2">
+                      {project.heading}
+                    </h3>
+                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                      {project.description}
+                    </p>
                   </div>
-                )}
-              </div>
+                  
+                  <div className="ml-4 relative w-6 h-6">
+                    <ArrowRight 
+                      size={24} 
+                      className="text-muted-foreground absolute inset-0 transition-opacity duration-300 opacity-100 group-hover:opacity-0" 
+                    />
+                    <ArrowUpRight 
+                      size={24} 
+                      className="text-muted-foreground absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100" 
+                    />
+                  </div>
+                </div>
+              )}
             </CardWrapper>
           );
         })}
