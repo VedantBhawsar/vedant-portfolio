@@ -25,64 +25,65 @@ const RecentWork = () => {
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
         {projects.map((project, index) => {
-          const CardWrapper = project.isComingSoon ? "div" : "a";
-          const cardProps = project.isComingSoon
-            ? {
-                "aria-disabled": true,
-                className: "group block bg-card border border-muted rounded-md overflow-hidden opacity-60 cursor-default",
-              }
-            : {
-                href: project.link,
-                target: "_blank",
-                rel: "noopener noreferrer",
-                "aria-label": `View ${project.heading} project`,
-                className: "group block bg-card border border-muted rounded-md overflow-hidden cursor-pointer",
-              };
+          if (project.isComingSoon) {
+            return (
+              <div 
+                key={index}
+                className="group block bg-card border border-muted rounded-md overflow-hidden opacity-60 cursor-default h-full flex items-center justify-center p-6"
+              >
+                <div className="text-center">
+                  <h3 className="text-lg md:text-xl font-semibold text-primary">
+                    Coming Soon
+                  </h3>
+                  <p className="text-sm md:text-base text-muted-foreground">
+                    Work in Progress
+                  </p>
+                </div>
+              </div>
+            );
+          }
 
           return (
-            <CardWrapper key={index} {...cardProps}>
+            <a 
+              key={index}
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label={`View ${project.heading} project`}
+              className="group block bg-card border border-muted rounded-md overflow-hidden cursor-pointer"
+            >
               {/* Image Section */}
               <div className="aspect-video w-full overflow-hidden bg-muted">
-                {project.image ? (
-                  <img
-                    src={project.image}
-                    alt={project.heading}
-                    className={`w-full h-full object-cover transition-transform duration-500 ${
-                      !project.isComingSoon ? "group-hover:scale-110" : ""
-                    }`}
-                  />
-                ) : (
-                  <div className="w-full h-full flex items-center justify-center text-muted-foreground">
-                    <span className="text-sm">Coming Soon</span>
-                  </div>
-                )}
+                <img
+                  src={project.image}
+                  alt={project.heading}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
               </div>
 
-              {/* Content Section - only for non-coming-soon projects */}
-              {!project.isComingSoon && (
-                <div className="p-6 flex items-center justify-between">
-                  <div>
-                    <h3 className="text-lg md:text-xl font-semibold text-primary mb-2">
-                      {project.heading}
-                    </h3>
-                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                      {project.description}
-                    </p>
-                  </div>
-                  
-                  <div className="ml-4 relative w-6 h-6">
-                    <ArrowRight 
-                      size={24} 
-                      className="text-muted-foreground absolute inset-0 transition-opacity duration-300 opacity-100 group-hover:opacity-0" 
-                    />
-                    <ArrowUpRight 
-                      size={24} 
-                      className="text-muted-foreground absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100" 
-                    />
-                  </div>
+              {/* Content Section */}
+              <div className="p-6 flex items-center justify-between">
+                <div>
+                  <h3 className="text-lg md:text-xl font-semibold text-primary mb-2">
+                    {project.heading}
+                  </h3>
+                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </p>
                 </div>
-              )}
-            </CardWrapper>
+                
+                <div className="ml-4 relative w-6 h-6">
+                  <ArrowRight 
+                    size={24} 
+                    className="text-muted-foreground absolute inset-0 transition-opacity duration-300 opacity-100 group-hover:opacity-0" 
+                  />
+                  <ArrowUpRight 
+                    size={24} 
+                    className="text-muted-foreground absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100" 
+                  />
+                </div>
+              </div>
+            </a>
           );
         })}
       </div>
