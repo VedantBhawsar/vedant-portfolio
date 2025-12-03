@@ -4,7 +4,7 @@ import ContactLinks from "@/components/ContactLinks";
 import AboutMe from "@/components/AboutMe";
 import Services from "@/components/Services";
 import RecentWork from "@/components/RecentWork";
-
+import Experience from "@/components/Experience";
 const Index = () => {
   return (
     <div className="min-h-screen w-full">
@@ -15,6 +15,7 @@ const Index = () => {
         <AboutMe />
         <Services />
         <RecentWork />
+        <Experience />
       </main>
     </div>
   );
