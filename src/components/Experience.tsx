@@ -36,16 +36,6 @@ const Experience = () => {
         <div className="flex-1">
           {experiences.map((exp, index) => (
             <div key={index} className="pb-8 md:pb-10">
-              {/* Company and Time Period Row */}
-              <div className="flex items-start justify-between mb-2">
-                <h3 className="text-lg md:text-xl font-semibold text-primary">
-                  {exp.company}
-                </h3>
-                <span className="text-sm md:text-base text-muted-foreground whitespace-nowrap ml-4">
-                  {exp.timePeriod}
-                </span>
-              </div>
-              
               {/* Location */}
               <div className="flex items-center gap-2 mb-1">
                 <MapPin size={16} className="text-muted-foreground" />
@@ -54,8 +44,18 @@ const Experience = () => {
                 </span>
               </div>
               
+              {/* Company and Time Period Row */}
+              <div className="flex items-start justify-between mb-2">
+                <h3 className="text-sm md:text-base font-semibold text-primary">
+                  {exp.company}
+                </h3>
+                <span className="text-sm md:text-base text-muted-foreground whitespace-nowrap ml-4">
+                  {exp.timePeriod}
+                </span>
+              </div>
+              
               {/* Role */}
-              <p className="text-base md:text-lg font-medium text-primary mb-4">
+              <p className="text-sm md:text-base font-medium text-muted-foreground mb-4">
                 {exp.role}
               </p>
               
