@@ -44,10 +44,10 @@ const Navbar = () => {
           {/* Desktop navigation - right aligned */}
           <div className="hidden md:flex items-center gap-8 ml-auto">
             {navItems.map((item) => (
-              item.name === "Work" ? (
+              item.name === "Work" || item.name === "Skills" ? (
                 <a
                   key={item.name}
-                  href="#work"
+                  href={item.name === "Work" ? "#work" : "#skills"}
                   className="text-[15px] font-medium transition-colors duration-300 focus-ring rounded-sm px-2 py-1 text-nav hover:text-nav-hover"
                 >
                   {item.name}
@@ -77,10 +77,10 @@ const Navbar = () => {
         >
           <div className="flex flex-col gap-4 py-6 border-t border-border">
             {navItems.map((item) => (
-              item.name === "Work" ? (
+              item.name === "Work" || item.name === "Skills" ? (
                 <a
                   key={item.name}
-                  href="#work"
+                  href={item.name === "Work" ? "#work" : "#skills"}
                   onClick={() => setIsOpen(false)}
                   className="text-[14px] font-medium transition-colors duration-300 focus-ring rounded-sm px-2 py-1 w-fit text-nav hover:text-nav-hover"
                 >
