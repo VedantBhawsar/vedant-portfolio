@@ -22,8 +22,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Geist', 'system-ui', '-apple-system', 'sans-serif'],
-        mono: ['Geist Mono', 'monospace'],
+        inter: ['Inter', 'Poppins', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
