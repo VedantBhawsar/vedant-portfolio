@@ -22,7 +22,7 @@ export default {
     },
     extend: {
       fontFamily: {
-        inter: ['Inter', 'Poppins', 'sans-serif'],
+        sans: ['Space Grotesk', 'system-ui', '-apple-system', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
