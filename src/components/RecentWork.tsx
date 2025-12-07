@@ -50,7 +50,7 @@ const RecentWork = () => {
               className="group block bg-card border border-muted rounded-md overflow-hidden cursor-pointer"
             >
               {/* Image Section */}
-              <div className="aspect-video w-full overflow-hidden bg-muted">
+              <div className="aspect-[2/1] w-full overflow-hidden bg-muted">
                 <img
                   src={project.image}
                   alt={project.heading}
