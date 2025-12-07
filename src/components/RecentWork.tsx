@@ -1,5 +1,6 @@
 import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Project1Image from "@/assets/Project_1.png";
+import Project2Image from "@/assets/Project_2.png";
 
 const RecentWork = () => {
   const projects = [
@@ -11,11 +12,11 @@ const RecentWork = () => {
       isComingSoon: false,
     },
     {
-      image: null,
-      heading: "Coming Soon",
-      description: "Work in Progress",
-      link: null,
-      isComingSoon: true,
+      image: Project2Image,
+      heading: "Spectrasynth Pharmachem",
+      description: "Pharmaceutical website built with React.js and Bootstrap.",
+      link: "https://www.spectrasynth.com/",
+      isComingSoon: false,
     },
   ];
 
