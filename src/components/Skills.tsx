@@ -15,7 +15,7 @@ import {
   SiPostman,
   SiVercel
 } from "react-icons/si";
-import { RiBearSmileFill } from "react-icons/ri";
+import { RiBearSmileFill } from "react-icons/ri"; 
 
 interface Skill {
   icon: React.ComponentType<{ size?: number; className?: string }>;
