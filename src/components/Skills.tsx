@@ -2,16 +2,20 @@ import {
   SiHtml5, 
   SiCss3, 
   SiJavascript, 
+  SiTypescript,
   SiReact, 
   SiTailwindcss,
-  SiBootstrap,
-  SiNodedotjs,
-  SiExpress,
-  SiMongodb,
+  SiMui,
+  SiShadcnui,
+  SiFramer,
+  SiLaravel,
+  SiMysql,
   SiGit,
   SiGithub,
-  SiPostman
+  SiPostman,
+  SiVercel
 } from "react-icons/si";
+import { RiBearSmileFill } from "react-icons/ri";
 
 interface Skill {
   icon: React.ComponentType<{ size?: number; className?: string }>;
@@ -22,15 +26,19 @@ const skills: Skill[] = [
   { icon: SiHtml5, name: "HTML" },
   { icon: SiCss3, name: "CSS" },
   { icon: SiJavascript, name: "JavaScript" },
-  { icon: SiReact, name: "React" },
+  { icon: SiTypescript, name: "TypeScript" },
+  { icon: SiReact, name: "React.js" },
+  { icon: RiBearSmileFill, name: "Zustand" },
   { icon: SiTailwindcss, name: "Tailwind CSS" },
-  { icon: SiBootstrap, name: "Bootstrap" },
-  { icon: SiNodedotjs, name: "Node.js" },
-  { icon: SiExpress, name: "Express" },
-  { icon: SiMongodb, name: "MongoDB" },
+  { icon: SiMui, name: "Material UI" },
+  { icon: SiShadcnui, name: "shadcn/ui" },
+  { icon: SiFramer, name: "Motion" },
+  { icon: SiLaravel, name: "Laravel" },
+  { icon: SiMysql, name: "MySQL" },
   { icon: SiGit, name: "Git" },
   { icon: SiGithub, name: "GitHub" },
   { icon: SiPostman, name: "Postman" },
+  { icon: SiVercel, name: "Vercel" },
 ];
 
 const Skills = () => {
@@ -44,13 +52,13 @@ const Skills = () => {
           return (
             <div
               key={index}
-              className="group flex flex-col items-center gap-3 transition-transform duration-300 hover:scale-110"
+              className="flex flex-col items-center gap-3"
             >
               <Icon 
-                size={40} 
-                className="text-muted-foreground group-hover:text-primary transition-colors duration-300" 
+                size={32} 
+                className="text-muted-foreground" 
               />
-              <span className="text-sm md:text-base font-medium text-muted-foreground group-hover:text-primary text-center transition-colors duration-300">
+              <span className="text-sm md:text-base font-medium text-muted-foreground text-center">
                 {skill.name}
               </span>
             </div>
