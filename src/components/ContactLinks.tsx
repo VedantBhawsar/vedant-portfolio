@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Copy, Linkedin, Github } from "lucide-react";
+import { Copy } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa6";
 import { toast } from "sonner";
 
 const ContactLinks = () => {
@@ -25,13 +26,13 @@ const ContactLinks = () => {
 
   const socialLinks = [
     {
-      icon: Linkedin,
+      icon: FaLinkedin,
       text: "LinkedIn",
       href: "https://www.linkedin.com/in/nirajrajput/",
       ariaLabel: "Visit LinkedIn profile",
     },
     {
-      icon: Github,
+      icon: FaGithub,
       text: "GitHub",
       href: "https://github.com/nirajrajput-dev",
       ariaLabel: "Visit GitHub profile",
