@@ -19,12 +19,12 @@ const socialLinks: SocialLink[] = [
   },
   {
     icon: FaXTwitter,
-    url: "https://twitter.com/yourusername",
+    url: "https://x.com/nirajrajput01",
     label: "X (Twitter)"
   },
   {
     icon: FaInstagram,
-    url: "https://instagram.com/yourusername",
+    url: "https://www.instagram.com/nirajrajput.__/",
     label: "Instagram"
   }
 ];
@@ -43,20 +43,24 @@ const Contact = () => {
         </p>
         
         {/* Social Icons */}
-        <div className="flex items-center justify-center gap-6 md:gap-8">
+        <div className="flex items-center justify-center gap-4">
           {socialLinks.map((social, index) => {
             const Icon = social.icon;
             return (
-              <a
-                key={index}
-                href={social.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label={social.label}
-                className="text-muted-foreground hover:text-primary transition-all duration-300 hover:scale-110 focus-ring rounded-sm p-1"
-              >
-                <Icon size={28} />
-              </a>
+              <div key={index} className="flex items-center gap-4">
+                <a
+                  href={social.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={social.label}
+                  className="text-muted-foreground focus-ring rounded-sm p-1"
+                >
+                  <Icon size={24} />
+                </a>
+                {index < socialLinks.length - 1 && (
+                  <span className="text-muted-foreground">/</span>
+                )}
+              </div>
             );
           })}
         </div>
