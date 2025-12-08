@@ -55,7 +55,7 @@ const Skills = () => {
               className="flex flex-col items-center gap-3"
             >
               <Icon 
-                size={32} 
+                size={28} 
                 className="text-muted-foreground" 
               />
               <span className="text-sm md:text-base font-medium text-muted-foreground text-center">

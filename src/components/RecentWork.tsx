@@ -70,13 +70,13 @@ const RecentWork = () => {
                   </p>
                 </div>
                 
-                <div className="ml-4 relative w-6 h-6">
+                <div className="ml-4 relative w-5 h-5">
                   <ArrowRight 
-                    size={24} 
+                    size={20} 
                     className="text-muted-foreground absolute inset-0 transition-opacity duration-300 opacity-100 group-hover:opacity-0" 
                   />
                   <ArrowUpRight 
-                    size={24} 
+                    size={20} 
                     className="text-muted-foreground absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100" 
                   />
                 </div>
