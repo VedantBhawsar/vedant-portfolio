@@ -47,7 +47,7 @@ const RecentWork = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`View ${project.heading} project`}
-              className="group block bg-card border border-muted rounded-md overflow-hidden cursor-pointer p-6"
+              className="group block bg-card border border-muted rounded-md overflow-hidden cursor-pointer p-6 md:p-8"
             >
               {/* Image Section */}
               <div className="aspect-[2/1] w-full overflow-hidden bg-muted rounded-md mb-4">
