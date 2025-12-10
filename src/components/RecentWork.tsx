@@ -48,10 +48,10 @@ const RecentWork = () => {
               target="_blank"
               rel="noopener noreferrer"
               aria-label={`View ${project.heading} project`}
-              className="group block bg-card border border-muted rounded-md overflow-hidden cursor-pointer"
+              className="group block bg-card border border-muted rounded-md overflow-hidden cursor-pointer p-6"
             >
               {/* Image Section */}
-              <div className="aspect-[2/1] w-full overflow-hidden bg-muted">
+              <div className="aspect-[2/1] w-full overflow-hidden bg-muted mb-2">
                 <img
                   src={project.image}
                   alt={project.heading}
@@ -60,7 +60,7 @@ const RecentWork = () => {
               </div>
 
               {/* Content Section */}
-              <div className="p-6 flex items-center justify-between">
+              <div className="flex items-center justify-between">
                 <div>
                   <h3 className="text-lg font-semibold text-primary mb-2">
                     {project.heading}
