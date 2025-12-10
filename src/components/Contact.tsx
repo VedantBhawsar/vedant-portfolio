@@ -53,7 +53,7 @@ const Contact = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={social.label}
-                  className="text-muted-foreground focus-ring rounded-sm p-1"
+                  className="text-muted-foreground hover:text-primary transition-colors duration-300 focus-ring rounded-sm p-1"
                 >
                   <Icon size={24} />
                 </a>
