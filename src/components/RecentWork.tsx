@@ -1,4 +1,3 @@
-import { ArrowRight, ArrowUpRight } from "lucide-react";
 import Project1Image from "@/assets/Project_1.png";
 import Project2Image from "@/assets/Project_2.png";
 
@@ -59,27 +58,14 @@ const RecentWork = () => {
                 />
               </div>
 
-              {/* Content Section */}
-              <div className="flex items-center justify-between">
-                <div>
-                  <h3 className="text-lg font-semibold text-primary mb-2">
-                    {project.heading}
-                  </h3>
-                  <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
-                    {project.description}
-                  </p>
-                </div>
-                
-                <div className="ml-4 relative w-5 h-5">
-                  <ArrowRight 
-                    size={20} 
-                    className="text-muted-foreground absolute inset-0 transition-opacity duration-300 opacity-100 group-hover:opacity-0" 
-                  />
-                  <ArrowUpRight 
-                    size={20} 
-                    className="text-muted-foreground absolute inset-0 transition-opacity duration-300 opacity-0 group-hover:opacity-100" 
-                  />
-                </div>
+{/* Content Section */}
+              <div>
+                <h3 className="text-lg font-semibold text-primary mb-2">
+                  {project.heading}
+                </h3>
+                <p className="text-sm md:text-base text-muted-foreground leading-relaxed">
+                  {project.description}
+                </p>
               </div>
             </a>
           );
