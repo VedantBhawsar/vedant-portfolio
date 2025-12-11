@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Copy } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import { toast } from "sonner";
+
 
 const ContactLinks = () => {
   const [emailText, setEmailText] = useState("nirajrajput.dev@gmail.com");
@@ -9,7 +9,6 @@ const ContactLinks = () => {
   const copyEmail = () => {
     navigator.clipboard.writeText("nirajrajput.dev@gmail.com");
     setEmailText("Copied!");
-    toast.success("Email copied to clipboard!");
     
     setTimeout(() => {
       setEmailText("nirajrajput.dev@gmail.com");
