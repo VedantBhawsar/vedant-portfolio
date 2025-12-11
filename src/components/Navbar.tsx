@@ -9,7 +9,7 @@ const Navbar = () => {
 
   // Navigation items configuration
   const navItems = [
-    { name: "Home", path: "/", scrollTo: null },
+    { name: "Home", path: "/", scrollTo: "#" },
     { name: "Work", path: "/work", scrollTo: "#work" },
     { name: "Skills", path: "/skills", scrollTo: "#skills" },
     { name: "Contact", path: "/contact", scrollTo: "#contact" },
@@ -29,7 +29,13 @@ const Navbar = () => {
         <a
           key={item.name}
           href={item.scrollTo!}
-          onClick={isMobile ? () => setIsOpen(false) : undefined}
+          onClick={(e) => {
+            if (item.scrollTo === "#") {
+              e.preventDefault();
+              window.scrollTo({ top: 0, behavior: "smooth" });
+            }
+            if (isMobile) setIsOpen(false);
+          }}
           className={`${baseClasses} text-nav hover:text-nav-hover`}
         >
           {item.name}
