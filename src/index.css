@@ -9,39 +9,39 @@ All colors MUST be HSL.
 @layer base {
   :root {
     /* Portfolio Design System - Dark Theme */
-    --background: 0 0% 9.8%; /* #18181b */
-    --foreground: 0 0% 90.2%; /* #e6e6e6 */
+    --background: 0 0% 7.1%; /* #121212 */
+    --foreground: 0 0% 98%; /* #FAFAFA */
 
-    --card: 0 0% 4.3%;
-    --card-foreground: 0 0% 90.2%;
+    --card: 0 0% 5%;
+    --card-foreground: 0 0% 98%;
 
-    --popover: 0 0% 4.3%;
-    --popover-foreground: 0 0% 90.2%;
+    --popover: 0 0% 5%;
+    --popover-foreground: 0 0% 98%;
 
-    --primary: 0 0% 90.2%; /* #e6e6e6 */
+    --primary: 0 0% 98%; /* #FAFAFA - bright white text */
     --primary-foreground: 0 0% 4.3%;
 
     --secondary: 0 0% 70.2%; /* #b3b3b3 */
-    --secondary-foreground: 0 0% 90.2%;
+    --secondary-foreground: 0 0% 98%;
 
-    --muted: 0 0% 16.5%; /* #2a2a2a */
-    --muted-foreground: 0 0% 70.2%; /* #b3b3b3 */
+    --muted: 0 0% 10.2%; /* #1A1A1A - slightly lighter than background */
+    --muted-foreground: 0 0% 67.1%; /* #ABABAB - dimmed text */
 
-    --accent: 145 57% 47.5%; /* #28c76f - green accent */
+    --accent: 140 100% 50%; /* #00FF3C - bright green accent */
     --accent-foreground: 0 0% 4.3%;
 
     --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 90.2%;
+    --destructive-foreground: 0 0% 98%;
 
-    --border: 0 0% 16.5%;
-    --input: 0 0% 16.5%;
-    --ring: 145 57% 47.5%;
+    --border: 0 0% 10.2%; /* #1A1A1A */
+    --input: 0 0% 10.2%;
+    --ring: 140 100% 50%;
 
     --radius: 0.625rem; /* 10px */
 
     /* Navigation colors */
-    --nav-default: 0 0% 81.2%; /* #cfcfcf */
-    --nav-hover: 0 0% 54.9%; /* #8c8c8c */
+    --nav-default: 0 0% 98%; /* Match primary text */
+    --nav-hover: 0 0% 67.1%; /* Match muted text on hover */
 
     --sidebar-background: 0 0% 4.3%;
     --sidebar-foreground: 0 0% 90.2%;
