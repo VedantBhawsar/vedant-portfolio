@@ -47,7 +47,7 @@ const Hero = () => {
             aria-label="Download resume PDF"
           >
             <Download size={16} className="shrink-0" />
-            <span>Download Resume</span>
+            <span>View Resume</span>
           </a>
         </div>
       </div>
