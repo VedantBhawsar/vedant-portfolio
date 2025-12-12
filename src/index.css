@@ -57,6 +57,7 @@ All colors MUST be HSL.
 @layer base {
   html {
     scroll-behavior: smooth;
+    scroll-padding-top: 5rem; /* 80px - accounts for fixed navbar height + breathing room */
   }
 
   * {
