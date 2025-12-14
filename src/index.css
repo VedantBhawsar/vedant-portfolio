@@ -40,8 +40,8 @@ All colors MUST be HSL.
     --radius: 0.625rem; /* 10px */
 
     /* Navigation colors */
-    --nav-default: 0 0% 98%; /* Match primary text */
-    --nav-hover: 0 0% 67.1%; /* Match muted text on hover */
+    --nav-default: 0 0% 67.1%; /* #ABABAB - dimmed text */
+    --nav-hover: 0 0% 50%; /* #808080 - more dimmed on hover */
 
     --sidebar-background: 0 0% 4.3%;
     --sidebar-foreground: 0 0% 90.2%;
