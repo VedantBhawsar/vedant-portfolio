@@ -77,7 +77,8 @@ All colors MUST be HSL.
   
   .animated-underline::after {
     content: '';
-    @apply absolute h-[1px] bg-white transition-transform duration-300 ease-out origin-left;
+    @apply absolute bg-white transition-transform duration-300 ease-out origin-left;
+    height: 1.5px; /* Custom 1.5px height */
     left: 0.5rem; /* 8px - matches px-2 padding */
     right: 0.5rem; /* 8px - matches px-2 padding */
     bottom: 0rem; /* Remove bottom offset, let it sit naturally below text */
