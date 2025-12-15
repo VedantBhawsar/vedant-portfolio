@@ -43,7 +43,7 @@ const Hero = () => {
             href="https://drive.google.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="animated-underline inline-flex items-center gap-2 text-[15px] text-primary font-medium focus-ring rounded-sm px-2 py-1"
+            className="inline-flex items-center gap-2 text-[15px] text-primary font-medium focus-ring rounded-sm px-2 py-1 underline decoration-dashed decoration-muted-foreground"
             aria-label="Download resume PDF"
           >
             <FileText size={16} className="shrink-0" />
