@@ -9,7 +9,7 @@ const AboutMe = () => {
             href="https://dddigitalsolution.com/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors duration-300 underline decoration-dashed decoration-muted-foreground underline-offset-6"
+            className="text-muted-foreground hover:text-primary transition-colors duration-300 underline decoration-dashed decoration-muted-foreground underline-offset-8"
           >
             DD Solutions
           </a>
