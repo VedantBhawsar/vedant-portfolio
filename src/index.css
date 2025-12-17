@@ -70,25 +70,36 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-  /* Animated underline for links */
-  .animated-underline {
-    @apply relative;
-  }
-  
-  .animated-underline::after {
-    content: '';
-    @apply absolute bg-white transition-transform duration-300 ease-out origin-left;
-    height: 1.5px; /* Custom 1.5px height */
-    left: 0.5rem; /* 8px - matches px-2 padding */
-    right: 0.5rem; /* 8px - matches px-2 padding */
-    bottom: 0rem; /* Remove bottom offset, let it sit naturally below text */
-    will-change: transform;
-    transform: scaleX(0) scaleY(1);
-  }
-  
-  .animated-underline:hover::after {
-    transform: scaleX(1) scaleY(1);
-  }
+/* Animated underline for links */
+.animated-underline {
+  @apply relative;
+}
+
+/* Static underline - always visible */
+.animated-underline::before {
+  content: '';
+  @apply absolute bg-muted-foreground;
+  height: 1.5px;
+  left: 0.5rem; /* 8px - matches px-2 padding */
+  right: 0.5rem; /* 8px - matches px-2 padding */
+  bottom: 0rem;
+}
+
+/* Animated underline - appears on hover */
+.animated-underline::after {
+  content: '';
+  @apply absolute bg-white transition-transform duration-300 ease-out origin-left;
+  height: 1.5px;
+  left: 0.5rem; /* 8px - matches px-2 padding */
+  right: 0.5rem; /* 8px - matches px-2 padding */
+  bottom: 0rem;
+  will-change: transform;
+  transform: scaleX(0) scaleY(1);
+}
+
+.animated-underline:hover::after {
+  transform: scaleX(1) scaleY(1);
+}
 
   /* Focus states for accessibility */
   .focus-ring {
