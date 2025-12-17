@@ -5,9 +5,6 @@ import { Menu, X } from "lucide-react";
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => setIsOpen(!isOpen);
-
-  // Navigation items configuration
   const navItems = [
     { name: "Home", path: "/", scrollTo: "#hero" },
     { name: "Work", path: "/work", scrollTo: "#work" },
@@ -15,10 +12,8 @@ const Navbar = () => {
     { name: "Contact", path: "/contact", scrollTo: "#contact" },
   ];
 
-  // Check if nav item uses anchor scroll instead of routing
   const isScrollLink = (item: typeof navItems[0]) => item.scrollTo !== null;
 
-  // Render individual navigation link
   const renderNavLink = (item: typeof navItems[0], isMobile = false) => {
     const baseClasses = `font-medium transition-colors duration-300 focus-ring rounded-sm px-2 py-1 ${
       isMobile ? "text-[14px] w-fit" : "text-[15px]"
@@ -55,22 +50,19 @@ const Navbar = () => {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background">
       <div className="container mx-auto max-w-[900px]">
         <div className="flex items-center justify-between h-14 md:h-16">
-          {/* Mobile hamburger menu button */}
           <button
-            onClick={toggleMenu}
+            onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 focus-ring rounded-sm"
             aria-label="Toggle navigation menu"
             aria-expanded={isOpen}
           >
             <div className="relative w-6 h-6">
-              {/* Menu icon - visible when closed */}
               <Menu
                 className={`absolute inset-0 text-nav transition-all duration-350 ${
                   isOpen ? "opacity-0 rotate-45 scale-75" : "opacity-100 rotate-0 scale-100"
                 }`}
                 size={24}
               />
-              {/* Close icon - visible when open */}
               <X
                 className={`absolute inset-0 text-nav transition-all duration-350 ${
                   isOpen ? "opacity-100 rotate-0 scale-100" : "opacity-0 -rotate-45 scale-75"
@@ -80,13 +72,11 @@ const Navbar = () => {
             </div>
           </button>
 
-          {/* Desktop navigation - hidden on mobile */}
           <div className="hidden md:flex items-center gap-8 ml-auto">
             {navItems.map((item) => renderNavLink(item))}
           </div>
         </div>
 
-        {/* Mobile navigation menu - slides down and pushes content */}
         <div
           className={`md:hidden overflow-hidden transition-all duration-350 ease-out ${
             isOpen ? "max-h-64 opacity-100" : "max-h-0 opacity-0"
