@@ -7,11 +7,11 @@ const Hero = () => {
       <div className="flex flex-col md:grid md:grid-cols-[auto_1fr_auto] md:gap-6 lg:gap-8 md:items-start">
         {/* Avatar - centered on mobile */}
         <div className="w-full md:w-auto flex justify-center md:justify-start mb-6 md:mb-0 md:self-start">
-          <img
-            src="https://i.pinimg.com/1200x/73/7e/02/737e021ae6c86a719f32281e1bcb550a.jpg"
-            alt="Niraj Rajput"
-            className="w-24 h-24 md:w-[130px] md:h-[130px] lg:w-[140px] lg:h-[140px] object-cover rounded-md"
-          />
+<img
+  src="https://i.pinimg.com/1200x/73/7e/02/737e021ae6c86a719f32281e1bcb550a.jpg"
+  alt="Niraj Rajput"
+  className="w-20 h-20 md:w-[110px] md:h-[110px] lg:w-[120px] lg:h-[120px] object-cover rounded-md"
+/>
         </div>
 
         {/* Text content - center on mobile */}
