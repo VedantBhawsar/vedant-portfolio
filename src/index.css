@@ -83,6 +83,8 @@ All colors MUST be HSL.
   left: 0.5rem; /* 8px - matches px-2 padding */
   right: 0.5rem; /* 8px - matches px-2 padding */
   bottom: 0rem;
+  transform: scaleY(1); /* Match rendering with animated underline */
+  will-change: transform;
 }
 
 /* Animated underline - appears on hover */
