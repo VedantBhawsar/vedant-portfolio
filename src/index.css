@@ -2,47 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
-
 @layer base {
   :root {
-    /* Portfolio Design System - Dark Theme */
-    --background: 0 0% 7.1%; /* #121212 */
-    --foreground: 0 0% 98%; /* #FAFAFA */
-
-    --card: 0 0% 7.1%; /* #121212 - matches background */
+    --background: 0 0% 7.1%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 7.1%;
     --card-foreground: 0 0% 98%;
-
     --popover: 0 0% 5%;
     --popover-foreground: 0 0% 98%;
-
-    --primary: 0 0% 98%; /* #FAFAFA - bright white text */
+    --primary: 0 0% 98%;
     --primary-foreground: 0 0% 4.3%;
-
-    --secondary: 0 0% 70.2%; /* #b3b3b3 */
+    --secondary: 0 0% 70.2%;
     --secondary-foreground: 0 0% 98%;
-
-    --muted: 0 0% 10.2%; /* #1A1A1A - slightly lighter than background */
-    --muted-foreground: 0 0% 67.1%; /* #ABABAB - dimmed text */
-
-    --accent: 140 100% 50%; /* #00FF3C - bright green accent */
+    --muted: 0 0% 10.2%;
+    --muted-foreground: 0 0% 67.1%;
+    --accent: 140 100% 50%;
     --accent-foreground: 0 0% 4.3%;
-
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
-
-    --border: 0 0% 10.2%; /* #1A1A1A */
+    --border: 0 0% 10.2%;
     --input: 0 0% 10.2%;
     --ring: 140 100% 50%;
-
-    --radius: 0.625rem; /* 10px */
-
-    /* Navigation colors */
-    --nav-default: 0 0% 67.1%; /* #ABABAB - dimmed text */
-    --nav-hover: 0 0% 50%; /* #808080 - more dimmed on hover */
-
+    --radius: 0.625rem;
+    --nav-default: 0 0% 67.1%;
+    --nav-hover: 0 0% 50%;
     --sidebar-background: 0 0% 4.3%;
     --sidebar-foreground: 0 0% 90.2%;
     --sidebar-primary: 0 0% 90.2%;
@@ -52,12 +35,10 @@ All colors MUST be HSL.
     --sidebar-border: 0 0% 16.5%;
     --sidebar-ring: 145 57% 47.5%;
   }
-}
 
-@layer base {
   html {
     scroll-behavior: smooth;
-    scroll-padding-top: 5rem; /* 80px - accounts for fixed navbar height + breathing room */
+    scroll-padding-top: 5rem;
   }
 
   * {
@@ -70,40 +51,36 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
-/* Animated underline for links */
-.animated-underline {
-  @apply relative;
-}
+  .animated-underline {
+    @apply relative;
+  }
 
-/* Static underline - always visible */
-.animated-underline::before {
-  content: '';
-  @apply absolute bg-muted-foreground;
-  height: 1.5px;
-  left: 0.5rem; /* 8px - matches px-2 padding */
-  right: 0.5rem; /* 8px - matches px-2 padding */
-  bottom: 0rem;
-  transform: scaleY(1); /* Match rendering with animated underline */
-  will-change: transform;
-}
+  .animated-underline::before {
+    content: '';
+    @apply absolute bg-muted-foreground;
+    height: 1.5px;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0;
+    transform: scaleY(1);
+    will-change: transform;
+  }
 
-/* Animated underline - appears on hover */
-.animated-underline::after {
-  content: '';
-  @apply absolute bg-white transition-transform duration-300 ease-out origin-left;
-  height: 1.5px;
-  left: 0.5rem; /* 8px - matches px-2 padding */
-  right: 0.5rem; /* 8px - matches px-2 padding */
-  bottom: 0rem;
-  will-change: transform;
-  transform: scaleX(0) scaleY(1);
-}
+  .animated-underline::after {
+    content: '';
+    @apply absolute bg-white transition-transform duration-300 ease-out origin-left;
+    height: 1.5px;
+    left: 0.5rem;
+    right: 0.5rem;
+    bottom: 0;
+    transform: scaleX(0) scaleY(1);
+    will-change: transform;
+  }
 
-.animated-underline:hover::after {
-  transform: scaleX(1) scaleY(1);
-}
+  .animated-underline:hover::after {
+    transform: scaleX(1) scaleY(1);
+  }
 
-  /* Focus states for accessibility */
   .focus-ring {
     @apply focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background;
   }
