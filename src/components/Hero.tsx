@@ -9,6 +9,7 @@ const Hero = () => {
             src="https://i.pinimg.com/1200x/73/7e/02/737e021ae6c86a719f32281e1bcb550a.jpg"
             alt="Niraj Rajput"
             className="w-20 h-20 md:w-[110px] md:h-[110px] lg:w-[120px] lg:h-[120px] object-cover rounded-md"
+            draggable={false}
           />
         </div>
 
