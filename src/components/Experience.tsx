@@ -27,24 +27,20 @@ const Experience = () => {
   return (
     <section className="container mx-auto max-w-[900px] mt-12 md:mt-16">
       <h2 className="text-2xl font-semibold text-primary mb-6">Experience</h2>
-      
+
       <div className="flex gap-6 md:gap-8">
-        {/* Left: Vertical Divider */}
         <div className="w-[2px] bg-muted flex-shrink-0" />
-        
-        {/* Right: Content */}
+
         <div className="flex-1">
           {experiences.map((exp, index) => (
             <div key={index} className="pb-8 md:pb-10">
-              {/* Location */}
               <div className="flex items-center gap-2 mb-1">
                 <MapPin size={16} className="text-muted-foreground" />
                 <span className="text-sm md:text-base text-muted-foreground">
                   {exp.location}
                 </span>
               </div>
-              
-              {/* Company and Time Period Row */}
+
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-sm md:text-base font-semibold text-primary">
                   {exp.company}
@@ -53,13 +49,11 @@ const Experience = () => {
                   {exp.timePeriod}
                 </span>
               </div>
-              
-              {/* Role */}
+
               <p className="text-sm md:text-base font-medium text-muted-foreground mb-4">
                 {exp.role}
               </p>
-              
-              {/* Description */}
+
               <ul className="space-y-3">
                 {exp.description.map((point, idx) => (
                   <li key={idx} className="flex items-start gap-3">
