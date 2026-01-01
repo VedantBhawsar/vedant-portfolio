@@ -14,6 +14,16 @@ const Navbar = () => {
 
   const isScrollLink = (item: typeof navItems[0]) => item.scrollTo !== null;
 
+  const handleScrollClick = (e: React.MouseEvent<HTMLAnchorElement>, target: string) => {
+    e.preventDefault();
+    const lenis = (window as any).lenis;
+    if (lenis) {
+      lenis.scrollTo(target);
+    } else {
+      document.querySelector(target)?.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   const renderNavLink = (item: typeof navItems[0], isMobile = false) => {
     const baseClasses = `font-medium transition-colors duration-300 focus-ring rounded-sm px-2 py-1 ${
       isMobile ? "text-[14px] w-fit" : "text-[15px]"
@@ -21,10 +31,13 @@ const Navbar = () => {
 
     if (isScrollLink(item)) {
       return (
-        <a
+        
           key={item.name}
           href={item.scrollTo!}
-          onClick={isMobile ? () => setIsOpen(false) : undefined}
+          onClick={(e) => {
+            handleScrollClick(e, item.scrollTo!);
+            if (isMobile) setIsOpen(false);
+          }}
           className={`${baseClasses} text-nav hover:text-nav-hover`}
         >
           {item.name}
