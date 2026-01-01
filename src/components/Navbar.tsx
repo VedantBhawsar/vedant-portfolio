@@ -31,7 +31,7 @@ const Navbar = () => {
 
     if (isScrollLink(item)) {
       return (
-        
+        <a
           key={item.name}
           href={item.scrollTo!}
           onClick={(e) => {
