@@ -18,7 +18,10 @@ const Navbar = () => {
     e.preventDefault();
     const lenis = (window as any).lenis;
     if (lenis) {
-      lenis.scrollTo(target);
+      lenis.scrollTo(target, {
+        offset: -80,
+        duration: 1.2,
+      });
     } else {
       document.querySelector(target)?.scrollIntoView({ behavior: "smooth" });
     }
