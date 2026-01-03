@@ -23,7 +23,7 @@ const Hero = () => {
             </p>
             <p className="text-sm md:text-[15px] lg:text-base text-muted-foreground flex items-center gap-2 justify-center md:justify-start">
               <MapPin size={16} className="shrink-0" />
-              <span>Pune, India</span>
+              <span>Navi Mumbai</span>
             </p>
           </div>
 

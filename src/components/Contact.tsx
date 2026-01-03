@@ -24,7 +24,7 @@ const socialLinks: SocialLink[] = [
   },
   {
     icon: FaInstagram,
-    url: "https://www.instagram.com/nirajrajput.__/",
+    url: "https://www.instagram.com/niraj.aok/",
     label: "Instagram"
   }
 ];
