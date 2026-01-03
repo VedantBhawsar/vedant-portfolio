@@ -19,7 +19,7 @@ const Hero = () => {
               Niraj Rajput
             </h1>
             <p className="text-sm md:text-[18px] lg:text-[20px] font-medium text-muted-foreground">
-              Front-end Developer
+              Full Stack Developer
             </p>
             <p className="text-sm md:text-[15px] lg:text-base text-muted-foreground flex items-center gap-2 justify-center md:justify-start">
               <MapPin size={16} className="shrink-0" />
