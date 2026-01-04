@@ -35,7 +35,7 @@ const Hero = () => {
 
         <div className="mt-6 md:mt-0 flex items-end w-full md:w-auto justify-center md:justify-end md:self-end">
           <a
-            href="https://drive.google.com/file/d/1RiiglIfKDKMuTkczguzuC_DwCEe_5ara/view?usp=sharing"
+            href="https://drive.google.com/file/d/1sRn4rFr66vZjj7aNeZ_iZUutO72aqLva/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="animated-underline inline-flex items-center gap-2 text-[15px] text-primary font-medium focus-ring rounded-sm px-2 py-1"
