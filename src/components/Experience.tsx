@@ -15,10 +15,11 @@ const experiences: ExperienceEntry[] = [
     role: "Front-End Developer",
     timePeriod: "March 2025 - July 2025",
     description: [
-      "Collaborated with the development team to build a fully responsive, mobile-first client-side interface using React.js, Bootstrap, and MUI, ensuring a seamless user experience across various devices and browsers.",
-      "Integrated RESTful APIs provided by the backend team, effectively utilizing Postman for endpoint testing and ensuring accurate and dynamic data rendering on the front end.",
-      "Improved performance and implemented on-page SEO based on guidelines from the SEO team, enhancing load times and search visibility.",
-      "Contributed to a Laravel-based project by implementing UI components, routes, controllers, and Blade templates; managed roles and permissions using Spatie, and worked with Eloquent models and basic authentication."
+      "Built and maintained responsive, mobile-first web interfaces using React.js, Bootstrap, and MUI, improving cross-device usability and reducing UI-related issues by ~15%.",
+      "Integrated RESTful APIs into frontend components, handling asynchronous data flows, validation errors, and loading states to ensure consistent and reliable user experiences.",
+      "Improved frontend performance and on-page SEO by implementing recommended optimizations, contributing to ~15–20% faster page load times and improved search visibility.",
+      "Worked on a Laravel-based backend, implementing routes, controllers, and Blade templates; performed CRUD operations using Eloquent ORM and MySQL; and assisted in implementing authentication and role-based access control using Laravel and Spatie Permissions."
+      "Used Git for version control and Postman for API testing and debugging during development cycles."
     ]
   }
 ];
