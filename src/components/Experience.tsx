@@ -18,7 +18,7 @@ const experiences: ExperienceEntry[] = [
       "Built and maintained responsive, mobile-first web interfaces using React.js, Bootstrap, and MUI, improving cross-device usability and reducing UI-related issues by ~15%.",
       "Integrated RESTful APIs into frontend components, handling asynchronous data flows, validation errors, and loading states to ensure consistent and reliable user experiences.",
       "Improved frontend performance and on-page SEO by implementing recommended optimizations, contributing to ~15–20% faster page load times and improved search visibility.",
-      "Worked on a Laravel-based backend, implementing routes, controllers, and Blade templates; performed CRUD operations using Eloquent ORM and MySQL; and assisted in implementing authentication and role-based access control using Laravel and Spatie Permissions."
+      "Worked on a Laravel-based backend, implementing routes, controllers, and Blade templates; performed CRUD operations using Eloquent ORM and MySQL; and assisted in implementing authentication and role-based access control using Laravel and Spatie Permissions.",
       "Used Git for version control and Postman for API testing and debugging during development cycles."
     ]
   }
