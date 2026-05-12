@@ -10,18 +10,58 @@ interface ExperienceEntry {
 
 const experiences: ExperienceEntry[] = [
   {
-    location: "Pune, India",
-    company: "DD Solutions",
-    role: "Front-End Developer",
-    timePeriod: "March 2025 - July 2025",
+    location: "Remote",
+    company: "Sparrowhost Pvt. Ltd.",
+    role: "Full Stack Developer",
+    timePeriod: "Apr 2025 – Present",
     description: [
-      "Built and maintained responsive, mobile-first web interfaces using React.js, Bootstrap, and MUI, improving cross-device usability and reducing UI-related issues by ~15%.",
-      "Integrated RESTful APIs into frontend components, handling asynchronous data flows, validation errors, and loading states to ensure consistent and reliable user experiences.",
-      "Improved frontend performance and on-page SEO by implementing recommended optimizations, contributing to ~15–20% faster page load times and improved search visibility.",
-      "Worked on a Laravel-based backend, implementing routes, controllers, and Blade templates; performed CRUD operations using Eloquent ORM and MySQL; and assisted in implementing authentication and role-based access control using Laravel and Spatie Permissions.",
-      "Used Git for version control and Postman for API testing and debugging during development cycles."
+      "Delivered core product pages for likelife.ai, an AI voice agent SaaS — built agent configuration system, workflow builder UI, and a call dashboard with polling refresh backed by PostgreSQL.",
+      "Architected AI conversational training modules for SimuPhish, a phishing awareness platform, using Claude-powered question generation, dynamic course sequencing, and a Next.js frontend connected to a Python AI backend.",
+      "Built customizable analytics dashboards and reporting interfaces, collaborating with designers and backend teams to maintain responsive multi-feature UI consistency.",
     ]
-  }
+  },
+  {
+    location: "Pune, India · Hybrid",
+    company: "ContractFlo Technologies",
+    role: "Full Stack Developer Intern",
+    timePeriod: "Jun 2024 – Oct 2024",
+    description: [
+      "Developed and maintained responsive web applications using React.js for the frontend and Express.js for the backend.",
+      "Optimized application performance and ensured seamless integration between frontend and backend systems.",
+      "Worked with MongoDB, Redux, and Docker across the full stack.",
+    ]
+  },
+  {
+    location: "Chandigarh, India · Remote",
+    company: "BizzyKa",
+    role: "Frontend Developer Intern",
+    timePeriod: "Jan 2024 – May 2024",
+    description: [
+      "Developed and optimized an ERP platform using Next.js, improving performance and user experience.",
+      "Integrated Express.js backend APIs for seamless data flow across the platform.",
+      "Improved page load times through code refactoring and performance best practices using TypeScript and Tailwind CSS.",
+    ]
+  },
+  {
+    location: "Jalgaon, India · Remote",
+    company: "D Path Labs",
+    role: "Full Stack Developer Intern",
+    timePeriod: "Aug 2023 – Oct 2023",
+    description: [
+      "Built full-stack features using Node.js, Express.js, TypeScript, and MongoDB.",
+      "Implemented UI components with Chakra UI and contributed to project management workflows.",
+    ]
+  },
+  {
+    location: "Jalgaon, India · Remote",
+    company: "We Are Engineer (WAE)",
+    role: "Full Stack Developer Intern",
+    timePeriod: "Mar 2023 – Oct 2023",
+    description: [
+      "Built and maintained full-stack web applications using Next.js, Node.js, and MongoDB.",
+      "Created responsive UI components with Material UI and collaborated on designs using Figma.",
+    ]
+  },
 ];
 
 const Experience = () => {

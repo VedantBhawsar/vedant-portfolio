@@ -3,12 +3,12 @@ import { Copy } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const ContactLinks = () => {
-  const [emailText, setEmailText] = useState("nirajrajput.dev@gmail.com");
+  const [emailText, setEmailText] = useState("Vedxntbhavsar@gmail.com");
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("nirajrajput.dev@gmail.com");
+    navigator.clipboard.writeText("Vedxntbhavsar@gmail.com");
     setEmailText("Copied!");
-    setTimeout(() => setEmailText("nirajrajput.dev@gmail.com"), 1000);
+    setTimeout(() => setEmailText("Vedxntbhavsar@gmail.com"), 1000);
   };
 
   const emailLink = {
@@ -23,13 +23,13 @@ const ContactLinks = () => {
     {
       icon: FaLinkedin,
       text: "LinkedIn",
-      href: "https://www.linkedin.com/in/nirajrajput/",
+      href: "https://linkedin.com/in/vedantbhawsar",
       ariaLabel: "Visit LinkedIn profile",
     },
     {
       icon: FaGithub,
       text: "GitHub",
-      href: "https://github.com/nirajrajput-dev",
+      href: "https://github.com/VedantBhawsar",
       ariaLabel: "Visit GitHub profile",
     },
   ];

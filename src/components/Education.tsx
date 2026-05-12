@@ -6,14 +6,9 @@ interface EducationEntry {
 
 const education: EducationEntry[] = [
   {
-    degree: "Bachelor of Technology in Computer Engineering",
-    timePeriod: "2022 - 2025",
-    institution: "KCES's College of Engineering and Management"
-  },
-  {
-    degree: "Diploma in Information Technology",
-    timePeriod: "2019 - 2022",
-    institution: "Government Polytechnic"
+    degree: "B.E. in Computer Science & Engineering — CGPA 7.9/10",
+    timePeriod: "Feb 2021 – Jun 2025",
+    institution: "SSBT College of Engineering & Technology, Jalgaon"
   }
 ];
 

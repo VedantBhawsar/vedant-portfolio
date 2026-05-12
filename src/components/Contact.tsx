@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaXTwitter, FaInstagram } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaXTwitter } from "react-icons/fa6";
 
 interface SocialLink {
   icon: React.ComponentType<{ size?: number; className?: string }>;
@@ -9,23 +9,18 @@ interface SocialLink {
 const socialLinks: SocialLink[] = [
   {
     icon: FaGithub,
-    url: "https://github.com/nirajrajput-dev",
+    url: "https://github.com/VedantBhawsar",
     label: "GitHub"
   },
   {
     icon: FaLinkedin,
-    url: "https://www.linkedin.com/in/nirajrajput/",
+    url: "https://linkedin.com/in/vedantbhawsar",
     label: "LinkedIn"
   },
   {
     icon: FaXTwitter,
-    url: "https://x.com/nirajrajput01",
+    url: "https://x.com/VedantBhawsar8",
     label: "X (Twitter)"
-  },
-  {
-    icon: FaInstagram,
-    url: "https://www.instagram.com/niraj.aok/",
-    label: "Instagram"
   }
 ];
 
