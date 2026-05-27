@@ -3,12 +3,12 @@ import { Copy } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa6";
 
 const ContactLinks = () => {
-  const [emailText, setEmailText] = useState("Vedxntbhavsar@gmail.com");
+  const [emailText, setEmailText] = useState("vedxntbhavsar@gmail.com");
 
   const copyEmail = () => {
-    navigator.clipboard.writeText("Vedxntbhavsar@gmail.com");
+    navigator.clipboard.writeText("vedxntbhavsar@gmail.com");
     setEmailText("Copied!");
-    setTimeout(() => setEmailText("Vedxntbhavsar@gmail.com"), 1000);
+    setTimeout(() => setEmailText("vedxntbhavsar@gmail.com"), 1000);
   };
 
   const emailLink = {

@@ -11,13 +11,25 @@ interface ExperienceEntry {
 const experiences: ExperienceEntry[] = [
   {
     location: "Remote",
-    company: "Sparrowhost Pvt. Ltd.",
+    company: "SparrowHost",
     role: "Full Stack Developer",
-    timePeriod: "Apr 2025 – Present",
+    timePeriod: "Jun 2025 – Present",
     description: [
-      "Delivered core product pages for likelife.ai, an AI voice agent SaaS — built agent configuration system, workflow builder UI, and a call dashboard with polling refresh backed by PostgreSQL.",
-      "Architected AI conversational training modules for SimuPhish, a phishing awareness platform, using Claude-powered question generation, dynamic course sequencing, and a Next.js frontend connected to a Python AI backend.",
-      "Built customizable analytics dashboards and reporting interfaces, collaborating with designers and backend teams to maintain responsive multi-feature UI consistency.",
+      "Built and integrated an AI voice agent platform end-to-end using Next.js and PostgreSQL, including Twilio number management, Retell AI agent configuration, and a custom call orchestration layer via an internal calling API.",
+      "Engineered an embeddable chatbot with a knowledge base ingestion pipeline, allowing clients to deploy a trained assistant to their website via a single script tag — handling auth, session state, and KB management.",
+      "Led a major product release collaborating with backend, design, and frontend teams — delivered a drag-and-drop customisable analytics dashboard, chat-based conversational training module, PDF report generation, and platform localisation.",
+      "Deployed multiple client applications using Docker, Nginx, and Kubernetes, and maintained CI/CD pipelines for automated build and release workflows.",
+    ]
+  },
+  {
+    location: "Remote",
+    company: "Real List Pvt. Ltd.",
+    role: "Full Stack Intern",
+    timePeriod: "Jun 2024 – Sept 2024",
+    description: [
+      "Built core platform features end-to-end — property search with filters, listings management, agent profiles, and a subscription billing system — as part of a 4-person dev team using Next.js, Express.js, and MongoDB.",
+      "Designed a property billing and tax calculation engine that auto-generates itemised cost breakdowns for real estate transactions, replacing a fully manual process and cutting invoice preparation from hours to seconds.",
+      "Built an analytics dashboard backed by MongoDB aggregation pipelines, surfacing key platform metrics to agents and admins in real time.",
     ]
   },
   {

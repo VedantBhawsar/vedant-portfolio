@@ -12,6 +12,14 @@ interface Project {
 const RecentWork = () => {
   const projects: Project[] = [
     {
+      heading: "DocSense",
+      description:
+        "Full-stack RAG platform enabling semantic search over user-uploaded documents using Next.js, NestJS, PostgreSQL + pgvector, and Claude API. Features a vector similarity search pipeline with sub-100ms retrieval latency and an async document ingestion pipeline with BullMQ and Redis.",
+      stack: "Next.js · NestJS · PostgreSQL · pgvector · OpenAI · BullMQ · Redis · AWS S3 · Docker",
+      github: "https://github.com/VedantBhawsar/DocSense",
+      live: "https://docsense.vedxnt.com",
+    },
+    {
       heading: "HookScope",
       description:
         "Webhook observability platform for Stripe & GitHub with HMAC signature verification, real-time event inspector, live failure alerts, and a high-throughput Redis queue ingestion pipeline backed by LocalStack S3.",

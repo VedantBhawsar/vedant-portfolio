@@ -62,7 +62,7 @@ const skills: Skill[] = [
   { icon: SiGit, name: "Git" },
   { icon: SiGithub, name: "GitHub" },
   { icon: SiPostman, name: "Postman" },
-  { icon: SiAnthropic, name: "Claude Code" },
+  { icon: SiAnthropic, name: "Claude API" },
 ];
 
 const Skills = () => {

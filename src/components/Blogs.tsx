@@ -9,10 +9,16 @@ interface BlogPost {
 
 const blogs: BlogPost[] = [
   {
-    title: "Coming Soon",
-    description: "Blog posts are on the way. Stay tuned.",
-    date: "",
-    link: "#",
+    title: "Deploying Next.js on Kubernetes with Autoscaling: A Complete Guide",
+    description: "Struggling to scale your Next.js app under traffic spikes? Learn how to Dockerize, deploy to Kubernetes, and set up HPA autoscaling.",
+    date: "Jun 2025",
+    link: "https://medium.com/@vedantbhavsar/deploying-next-js-on-kubernetes-with-autoscaling-a-complete-guide-9140612fd26f",
+  },
+  {
+    title: "Docker to VPS Deployment Guide for Next.js Apps (Beginner-Friendly)",
+    description: "Learn how to deploy a production-ready Next.js application using Docker, Docker Compose, Nginx reverse proxy, and custom domain mapping.",
+    date: "May 2025",
+    link: "https://medium.com/@vedantbhavsar/docker-to-vps-deployment-guide-for-next-js-apps-beginner-friendly-3cf32b4dbe3b",
   },
 ];
 

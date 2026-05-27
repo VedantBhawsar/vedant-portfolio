@@ -19,11 +19,11 @@ const Hero = () => {
               Vedant Bhavsar
             </h1>
             <p className="text-sm md:text-[18px] lg:text-[20px] font-medium text-muted-foreground">
-              Full Stack Developer
+              Full Stack Engineer
             </p>
             <p className="text-sm md:text-[15px] lg:text-base text-muted-foreground flex items-center gap-2 justify-center md:justify-start">
               <MapPin size={16} className="shrink-0" />
-              <span>Pune, India</span>
+              <span>Maharashtra, India</span>
             </p>
           </div>
 
@@ -35,7 +35,7 @@ const Hero = () => {
 
         <div className="mt-6 md:mt-0 flex items-end w-full md:w-auto justify-center md:justify-end md:self-end">
           <a
-            href="https://drive.google.com/file/d/1qwHwk0nRL1azodoE2_27JKaRpbV96Sgp/view?usp=sharing"
+            href="https://drive.google.com/file/d/1uZ2Yj19byjA6XJsaXhyOg-tX-khFGHfZ/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             className="animated-underline inline-flex items-center gap-2 text-[15px] text-primary font-medium focus-ring rounded-sm px-2 py-1"
