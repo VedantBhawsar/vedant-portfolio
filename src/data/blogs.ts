@@ -7,6 +7,12 @@ export interface BlogPost {
 
 export const blogs: BlogPost[] = [
   {
+    title: "Backend Technologies That We Must Know (Things I Learned the Hard Way).",
+    description: "A while back I was pretty confident I “knew backend",
+    date: "Jul 2026",
+    link: "https://vedantbhavsar.medium.com/backend-technologies-that-we-must-know-things-i-learned-the-hard-way-fa10c15fe39e?source=rss-4338900299b1------2",
+  },
+  {
     title: "Next.js Testing in 2025: Vitest + Playwright Setup, Auth, Multi-Browser & CI/CD",
     description: "Learn how to set up Vitest for unit testing and Playwright for E2E testing in Next",
     date: "Jun 2026",
@@ -59,11 +65,5 @@ export const blogs: BlogPost[] = [
     description: "Photo by Toa Heftiba on UnsplashIn the pursuit of knowledge and self-improvement, the act of reading often serves as a cornerstone",
     date: "Feb 2024",
     link: "https://vedantbhavsar.medium.com/unlocking-productivity-how-to-study-books-effectively-b9c976ed626f?source=rss-4338900299b1------2",
-  },
-  {
-    title: "Unlocking Success: Crafting Your Perfect Morning Routine.",
-    description: "morning routinesPhoto by Sarthak Maity on UnsplashBuilding a productive morning routine sets the cornerstone for a day of success",
-    date: "Jan 2024",
-    link: "https://vedantbhavsar.medium.com/unlocking-success-crafting-your-perfect-morning-routine-7108aaaee2e0?source=rss-4338900299b1------2",
   },
 ];
