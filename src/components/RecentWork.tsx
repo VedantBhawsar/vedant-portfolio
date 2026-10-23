@@ -4,7 +4,7 @@ import { ExternalLink } from "lucide-react";
 interface Project {
   heading: string;
   description: string;
-  stack: string;
+  stack?: string;
   github?: string;
   live?: string;
   ongoing?: boolean;
@@ -19,6 +19,12 @@ const RecentWork = () => {
       stack: "Next.js · TypeScript · Razorpay · Cloudinary · Tailwind CSS",
       live: "https://revolutionfuelandfitness.com",
       ongoing: true,
+    },
+    {
+      heading: "Dorayme",
+      description:
+        "Healthcare platform where doctors assign guided meditation videos to parents and track their progress through the program, giving clinicians visibility into each family's wellness journey.",
+      live: "https://dorayme.in",
     },
     {
       heading: "ClipFlow",
@@ -119,7 +125,9 @@ const RecentWork = () => {
             <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-4 flex-1">
               {project.description}
             </p>
-            <p className="text-xs text-muted-foreground/70 font-mono mb-5">{project.stack}</p>
+            {project.stack && (
+              <p className="text-xs text-muted-foreground/70 font-mono mb-5">{project.stack}</p>
+            )}
             <div className="flex items-center gap-4">
               {project.github && (
                 <a
