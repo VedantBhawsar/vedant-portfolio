@@ -23,7 +23,8 @@ const RecentWork = () => {
     {
       heading: "Dorayme",
       description:
-        "Healthcare platform where doctors assign guided meditation videos to parents and track their progress through the program, giving clinicians visibility into each family's wellness journey.",
+        "Integrative healthcare platform built as three apps: a doctor portal for patient management, care plans with assigned meditation, sound healing and yoga therapies, clinical notes and progress tracking; a parent app with onboarding, subscription checkout and a guided audio/video library; and an admin console for doctor approvals and content resources.",
+      stack: "Next.js 15 · React 19 · TypeScript · TanStack Query · React Hook Form · Zod · Stripe · ArtPlayer · shadcn/ui · Tailwind CSS",
       live: "https://dorayme.in",
     },
     {
@@ -48,6 +49,7 @@ const RecentWork = () => {
         "Webhook observability platform for Stripe & GitHub with HMAC signature verification, real-time event inspector, live failure alerts, and a high-throughput Redis queue ingestion pipeline backed by LocalStack S3.",
       stack: "Next.js · Express · Fastify · Redis · PostgreSQL · Docker",
       github: "https://github.com/VedantBhawsar/HookScope",
+      live: "https://hookscope.vedxnt.com",
     },
     {
       heading: "Sniplink",
