@@ -14,7 +14,11 @@ const experiences: ExperienceEntry[] = [
     company: "8byte",
     role: "Full Stack Engineer",
     timePeriod: "Oct 2026 – Present",
-    description: [],
+    description: [
+      "Building features across a loan operating system that manages the lending lifecycle, from loan origination and application processing to disbursement and repayment.",
+      "Developing borrower and lender-facing workflows, including KYC and document verification, credit assessment, and loan approval flows.",
+      "Working on loan servicing modules such as EMI schedules, repayment tracking, and account statements, with a focus on data accuracy and compliance.",
+    ],
   },
   {
     location: "Remote",
