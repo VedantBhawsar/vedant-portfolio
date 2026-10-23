@@ -1,7 +1,7 @@
 import { MapPin } from "lucide-react";
 
 interface ExperienceEntry {
-  location: string;
+  location?: string;
   company: string;
   role: string;
   timePeriod: string;
@@ -10,10 +10,17 @@ interface ExperienceEntry {
 
 const experiences: ExperienceEntry[] = [
   {
+    location: "Bengaluru, Karnataka, India",
+    company: "8byte",
+    role: "Full Stack Engineer",
+    timePeriod: "Oct 2026 – Present",
+    description: [],
+  },
+  {
     location: "Remote",
-    company: "SparrowHost",
+    company: "SimuPhish",
     role: "Full Stack Developer",
-    timePeriod: "Jun 2025 – Present",
+    timePeriod: "Jun 2025 – Oct 2026",
     description: [
       "Built and integrated an AI voice agent platform end-to-end using Next.js and PostgreSQL, including Twilio number management, Retell AI agent configuration, and a custom call orchestration layer via an internal calling API.",
       "Engineered an embeddable chatbot with a knowledge base ingestion pipeline, allowing clients to deploy a trained assistant to their website via a single script tag — handling auth, session state, and KB management.",
@@ -87,12 +94,14 @@ const Experience = () => {
         <div className="flex-1">
           {experiences.map((exp, index) => (
             <div key={index} className="pb-8 md:pb-10">
-              <div className="flex items-center gap-2 mb-1">
-                <MapPin size={16} className="text-muted-foreground" />
-                <span className="text-sm md:text-base text-muted-foreground">
-                  {exp.location}
-                </span>
-              </div>
+              {exp.location && (
+                <div className="flex items-center gap-2 mb-1">
+                  <MapPin size={16} className="text-muted-foreground" />
+                  <span className="text-sm md:text-base text-muted-foreground">
+                    {exp.location}
+                  </span>
+                </div>
+              )}
 
               <div className="flex items-start justify-between mb-2">
                 <h3 className="text-sm md:text-base font-semibold text-primary">
@@ -103,7 +112,7 @@ const Experience = () => {
                 </span>
               </div>
 
-              <p className="text-sm md:text-base font-medium text-muted-foreground mb-4">
+              <p className={`text-sm md:text-base font-medium text-muted-foreground${exp.description.length ? " mb-4" : ""}`}>
                 {exp.role}
               </p>
 
